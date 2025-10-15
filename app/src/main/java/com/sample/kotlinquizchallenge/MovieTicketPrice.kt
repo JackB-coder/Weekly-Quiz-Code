@@ -15,7 +15,30 @@ package com.sample.kotlinquizchallenge
 * 8, false → 8
 *
 * */
+fun calculateTicketPrice(age: Int, isMatinee: Boolean): Int {
+    /*
+    val kids = 11
+    val oldPeople = 65
+     */
+    var ticketPrice = 15;
+    if(age <= 11 || age >= 65){
+        ticketPrice = 8
+        return ticketPrice
+    }
 
+    return ticketPrice
+
+}
 fun main() {
+
+    val customers = listOf(
+        Pair(25, true),
+        Pair( 70, true),
+        Pair(8, false)
+    )
+    for (customer in customers) {
+        val ticketPrice = calculateTicketPrice(customer.first, customer.second)
+        println(ticketPrice)
+    }
 
 }

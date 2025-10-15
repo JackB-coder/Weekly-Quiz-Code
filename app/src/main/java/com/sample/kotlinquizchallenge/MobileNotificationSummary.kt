@@ -12,4 +12,19 @@ package com.sample.kotlinquizchallenge
 
 fun main() {
 
+    val popularity = (0..101).random()
+
+    if(popularity == null){
+        println("No Notifications")
+
+    }
+    else if(popularity == 100){
+        println("You have Notifications 99+")
+
+    }
+    else {
+        println("$popularity -> you have $popularity Notifications ")
+
+    }
+
 }

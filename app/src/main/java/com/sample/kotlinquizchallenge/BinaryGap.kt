@@ -14,6 +14,19 @@ package com.sample.kotlinquizchallenge
 * 32 → 0 (no gap surrounded by ones)
 * */
 
+fun findBinaryGap(number: Int): String{
+    val binary = Integer.toBinaryString(number)
+    return binary
+
+}
+
 fun main() {
+    val number = (1..100).random();
+    val answer = findBinaryGap(number)
+
+    print("$number → $answer")
+
+
+
 
 }

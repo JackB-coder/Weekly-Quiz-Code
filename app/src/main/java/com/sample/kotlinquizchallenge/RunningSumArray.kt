@@ -13,5 +13,15 @@ package com.sample.kotlinquizchallenge
 * */
 
 fun main() {
+    val numbers = intArrayOf(1, 2, 3, 4)
+
+    var numba = mutableListOf<Int>()
+    var sum = 0
+
+    for( c in numbers){
+        sum += c
+        numba.add(sum)
+    }
+    print(numba)
 
 }

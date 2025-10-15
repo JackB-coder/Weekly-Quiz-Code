@@ -17,4 +17,17 @@ package com.sample.kotlinquizchallenge
 
 fun main() {
 
+    val bids = listOf<Int>(21 ,43, 121, 87, 3, 90, 11, 121, 122)
+    var currentBid = 0
+
+    for( c in bids){
+        if( c > currentBid) {
+            currentBid = c
+            println("$currentBid  ->  + $c +  (accepted)")
+        }
+        else {
+            println("$currentBid  ->  + $c +  (rejected)")
+        }
+    }
+
 }
